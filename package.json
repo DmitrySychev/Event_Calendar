@@ -1,5 +1,5 @@
 {
-  "name": "Event_Calendar",
+  "name": "Event-Calendar",
   "version": "1.0.0",
   "description": "Pandemic Events",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1", 
+    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "yarn --cwd frontend install && yarn --cwd frontend build",
     "deploy": "cp -a frontend/build/. public/",
     "heroku-postbuild": "yarn build && yarn deploy"
@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/DmitrySychev/Event_Calendar/issues"
   },
-  "homepage": "https://github.com/DmitrySychev/Event_Calendar#readme"
+  "homepage": "https://github.com/DmitrySychev/Event_Calendar#readme",
+  "dependencies": {
+    "yarn": "^1.22.10"
+  }
 }
